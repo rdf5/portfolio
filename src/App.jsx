@@ -26,7 +26,7 @@ export default function App() {
       <main>
         <div className="main">
           <div className="intro">
-            <p className="kicker">Visual artist · Kuala Lumpur, MY</p>
+            <p className="kicker">Visual artist · GMT+8</p>
             <h1 className="intro-title">
               anaqin5<span className="accent">.</span>
             </h1>
