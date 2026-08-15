@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anaqin5 — Art Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of anaqin5 — a visual artist exploring digital and traditional media."
+    />
+    <meta property="og:title" content="anaqin5 — Art Portfolio" />
+    <meta
+      property="og:description"
+      content="Visual artist exploring digital and traditional media."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f3f0e9" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      ;(function () {
+        var saved = null
+        try {
+          saved = localStorage.getItem('anaqin-theme')
+        } catch (e) {
+          saved = null
+        }
+        var dark = saved
+          ? saved === 'dark'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) {
+          document.documentElement.classList.add('theme-dark')
+          document
+            .querySelector('meta[name="theme-color"]')
+            ?.setAttribute('content', '#101010')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

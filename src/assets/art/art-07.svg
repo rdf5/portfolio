@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="t07">
+  <title id="t07">Placeholder artwork 07 — replace with your piece</title>
+  <defs>
+    <radialGradient id="g07" cx="28%" cy="32%" r="90%">
+      <stop offset="0%" stop-color="#d8d7d3"/>
+      <stop offset="100%" stop-color="#b5b3ad"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#g07)"/>
+  <rect x="16" y="16" width="968" height="968" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
+  <text x="964" y="958" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" letter-spacing="3" fill="rgba(0,0,0,0.25)">ANAQIN5 · 07</text>
+</svg>
