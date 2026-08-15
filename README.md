@@ -22,8 +22,7 @@ npm run preview
 
 ## Replace the placeholder artwork
 
-The site ships with 9 blank placeholder canvases in `src/assets/art/`,
-displayed as a 3×3 grid.
+The site ships with 6 artworks in `src/assets/art/`, displayed as a 3×2 grid.
 To add your real work:
 
 1. Drop your images into `src/assets/art/` (PNG, JPG, WebP, or SVG all work).
