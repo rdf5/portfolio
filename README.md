@@ -22,15 +22,16 @@ npm run preview
 
 ## Replace the placeholder artwork
 
-The site ships with 6 artworks in `src/assets/art/`, displayed as a 3×2 grid.
-To add your real work:
+The site displays 6 artworks in a 3×2 grid, hotlinked directly from X
+(Twitter) so no image files live in the repo.
 
-1. Drop your images into `src/assets/art/` (PNG, JPG, WebP, or SVG all work).
-2. Open `src/data/works.js` and update each entry:
-   - `src` — import the new file at the top of `works.js`
+To swap the artwork:
+
+1. Open `src/data/works.js` and update each entry:
+   - `src` — the direct image URL
    - `title`, `medium`, `year` — your piece's details
    - `alt` — a short description for accessibility
-3. Update the contact email in `src/components/Footer.jsx` if needed.
+2. Update the contact email in `src/components/Footer.jsx` if needed.
 
 ## Deploy to GitHub Pages
 
