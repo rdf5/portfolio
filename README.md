@@ -2,7 +2,9 @@
 
 A modern, single-screen React + Vite art portfolio for
 **[@anaqin5](https://x.com/anaqin5)**, deployed on GitHub Pages. The whole page
-fits in one viewport — no scrolling. Click any artwork to view it up close.
+fits in one viewport — no scrolling. Artworks are shown one at a time on a
+spinning-disc carousel; drag, swipe, click the side arrows, or use the arrow
+keys to rotate through the queue.
 
 ## Run locally
 
@@ -22,8 +24,10 @@ npm run preview
 
 ## Replace the placeholder artwork
 
-The site displays 6 artworks in a 3×2 grid, hotlinked directly from X
-(Twitter) so no image files live in the repo.
+The site shows one artwork at a time, hotlinked directly from X (Twitter) so
+no image files live in the repo. There is no fixed limit on the queue: every
+entry in `src/data/works.js` joins the disc automatically, and the carousel
+wraps around from the last piece back to the first.
 
 To swap the artwork:
 
