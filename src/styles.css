@@ -732,6 +732,7 @@ a {
   .app {
     height: auto;
     min-height: 100svh;
+    min-height: 100dvh;
     overflow-y: auto;
     overscroll-behavior-y: contain;
   }
@@ -752,7 +753,7 @@ a {
     justify-content: center;
     width: auto;
     margin: 0;
-    padding: calc(var(--header-h) + 0.9rem) 1.25rem 0.9rem;
+    padding: calc(var(--header-h) + 0.7rem) 1.25rem 0.7rem;
     border: 0;
     border-radius: 0;
     background: none;
@@ -764,20 +765,24 @@ a {
 
   .app--grid .intro {
     display: flex;
-    padding-bottom: 0.9rem;
+    padding-bottom: 0.7rem;
   }
 
   .intro-title {
     font-size: clamp(1.7rem, 7vw, 2.2rem);
   }
 
+  .kicker {
+    margin-bottom: 0.6rem;
+  }
+
   .tagline {
-    margin: 0.35rem 0 0.8rem;
+    margin: 0.3rem 0 0.7rem;
     font-size: 0.92rem;
   }
 
   .intro-links {
-    margin-top: 0.7rem;
+    margin-top: 0.55rem;
   }
 
   .intro-alias {
@@ -789,15 +794,17 @@ a {
     position: relative;
     height: calc(100vh - var(--header-h));
     height: calc(100svh - var(--header-h));
+    height: calc(100dvh - var(--header-h));
   }
 
   .viewer {
-    --slide-max: min(84%, 560px, 55vh);
-    padding: 0.75rem 0.85rem 0.65rem;
+    --slide-max: min(84%, 560px, 55dvh);
+    padding: 0.65rem 0.85rem 0.55rem;
     gap: 0.55rem;
   }
 
   .viewer-stage {
+    min-height: 0;
     padding-bottom: 3rem;
   }
 
@@ -838,13 +845,14 @@ a {
   .viewer--grid {
     height: 100%;
     gap: 0.55rem;
-    padding: 0.75rem 0.85rem 0.65rem;
+    padding: 0.65rem 0.85rem 0.55rem;
   }
 
   .viewer-grid {
+    min-height: 0;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 0.6rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.6rem;
   }
 
   .header-actions {

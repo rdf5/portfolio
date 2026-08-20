@@ -12,12 +12,17 @@ function isMobile() {
   return typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches
 }
 
+function getViewportHeight() {
+  if (typeof window === 'undefined') return 0
+  return window.visualViewport?.height || window.innerHeight || 0
+}
+
 function getRadius(stageH = 0, viewportH = 0) {
   if (isMobile()) {
-    const fromViewport = viewportH > 0 ? viewportH * 0.22 : window.innerHeight * 0.22
+    const fromViewport = (viewportH > 0 ? viewportH : getViewportHeight()) * 0.22
     return Math.min(240, Math.max(120, fromViewport))
   }
-  const fromViewport = viewportH > 0 ? viewportH * 0.5 : window.innerHeight * 0.5
+  const fromViewport = (viewportH > 0 ? viewportH : getViewportHeight()) * 0.5
   return Math.min(RADIUS_MAX, Math.max(RADIUS_MIN, fromViewport))
 }
 
@@ -51,6 +56,7 @@ export default function ArtworkViewer({ works = [], mode = 'disc', onModeChange 
   const [dragOffset, setDragOffset] = useState(0)
   const [ratios, setRatios] = useState({})
   const [stageSize, setStageSize] = useState({ w: 0, h: 0 })
+  const [viewportH, setViewportH] = useState(() => getViewportHeight())
   const dragRef = useRef(null)
   const stageRef = useRef(null)
 
@@ -67,13 +73,28 @@ export default function ArtworkViewer({ works = [], mode = 'disc', onModeChange 
       const el = stageRef.current
       if (!el) return
       const rect = el.getBoundingClientRect()
-      setStageSize({ w: rect.width, h: rect.height })
-      setRadius(getRadius(rect.height, window.innerHeight))
+      const vh = getViewportHeight()
+      setStageSize((prev) =>
+        prev.w === rect.width && prev.h === rect.height ? prev : { w: rect.width, h: rect.height },
+      )
+      setViewportH((prev) => (prev === vh ? prev : vh))
     }
     measure()
-    window.addEventListener('resize', measure)
-    return () => window.removeEventListener('resize', measure)
+    const onResize = () => measure()
+    const vv = window.visualViewport
+    window.addEventListener('resize', onResize)
+    vv?.addEventListener('resize', onResize)
+    vv?.addEventListener('scroll', onResize)
+    return () => {
+      window.removeEventListener('resize', onResize)
+      vv?.removeEventListener('resize', onResize)
+      vv?.removeEventListener('scroll', onResize)
+    }
   }, [])
+
+  useEffect(() => {
+    setRadius(getRadius(stageSize.h, viewportH))
+  }, [stageSize.h, viewportH])
 
   useEffect(() => {
     if (mode !== 'disc' || total < 2) return
@@ -185,7 +206,7 @@ export default function ArtworkViewer({ works = [], mode = 'disc', onModeChange 
   }
 
   const slides = []
-  const maxSide = stageSize.w ? getMaxSide(stageSize.w, stageSize.h, window.innerHeight) : 0
+  const maxSide = stageSize.w ? getMaxSide(stageSize.w, stageSize.h, viewportH) : 0
   for (const [index, offset] of seen) {
     const item = works[index]
     const ratio = ratios[item.id] ?? 1
