@@ -38,7 +38,7 @@ function slideTransform(offset, dragOffset, radius) {
 
 function getMaxSide(stageW, stageH, viewportH) {
   if (isMobile()) {
-    return Math.min(stageW * 0.92, 560, viewportH * 0.55)
+    return Math.min(stageW * 0.92, stageH * 0.74, 560, viewportH * 0.55)
   }
   return Math.min(stageW * 0.76, stageH * 0.86, 760, viewportH * 0.66)
 }
