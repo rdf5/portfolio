@@ -3,6 +3,14 @@
 export const works = [
   {
     id: 1,
+    src: 'https://pbs.twimg.com/media/HQF9Z5UaYAAFGHf?format=jpg&name=4096x4096',
+    alt: '鹿乃まほろずっと応援してる！ by anaqin5',
+    title: '鹿乃まほろずっと応援してる！',
+    medium: 'Digital',
+    year: '2026',
+  },
+  {
+    id: 2,
     src: 'https://pbs.twimg.com/media/HP2o5xyaMAEsZlF?format=jpg&name=4096x4096',
     alt: 'おかえりなさい、鹿乃ちゃん。 by anaqin5',
     title: 'おかえりなさい、鹿乃ちゃん。',
@@ -10,7 +18,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 2,
+    id: 3,
     src: 'https://pbs.twimg.com/media/HPw3n7VawAA9-tL?format=jpg&name=4096x4096',
     alt: 'I Love Kano by anaqin5',
     title: 'I Love Kano',
@@ -18,7 +26,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 3,
+    id: 4,
     src: 'https://pbs.twimg.com/media/HP1n2AIaIAAgSBS?format=jpg&name=4096x4096',
     alt: 'Amamiya Kokoro Request by anaqin5',
     title: 'Amamiya Kokoro Request',
@@ -26,7 +34,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 4,
+    id: 5,
     src: 'https://pbs.twimg.com/media/HPXU33VbYAA3h3X?format=jpg&name=4096x4096',
     alt: 'Kanaday by anaqin5',
     title: 'Kanaday',
@@ -34,7 +42,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 5,
+    id: 6,
     src: 'https://pbs.twimg.com/media/HNmlkGUbUAAwNx3?format=jpg&name=4096x4096',
     alt: 'Hanayori Summer by anaqin5',
     title: 'Hanayori Summer',
@@ -42,7 +50,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 6,
+    id: 7,
     src: 'https://pbs.twimg.com/media/HPhpv5ibYAAA3CZ?format=jpg&name=4096x4096',
     alt: 'Hyacine request from Mei by anaqin5',
     title: 'Hyacine request from Mei',
@@ -50,7 +58,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 7,
+    id: 8,
     src: 'https://pbs.twimg.com/media/HIsRNg2bQAA9b-I?format=jpg&name=4096x4096',
     alt: 'Lacrimosa by anaqin5',
     title: 'Lacrimosa',
@@ -58,7 +66,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 8,
+    id: 9,
     src: 'https://pbs.twimg.com/media/HGL3kC4bUAAfusM?format=jpg&name=4096x4096',
     alt: 'Moonshot Suisei by anaqin5',
     title: 'Moonshot Suisei',
@@ -66,7 +74,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 9,
+    id: 10,
     src: 'https://pbs.twimg.com/media/HPxbx4raEAAM4Q5?format=jpg&name=small',
     alt: 'Ibuki request from Takeshi Kei by anaqin5',
     title: 'Ibuki request from Takeshi Kei',
@@ -74,7 +82,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 10,
+    id: 11,
     src: 'https://pbs.twimg.com/media/HPsawUsaMAAckbO?format=jpg&name=small',
     alt: 'Hanabi Choya request from Dzen by anaqin5',
     title: 'Hanabi Choya request from Dzen',
@@ -82,7 +90,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 11,
+    id: 12,
     src: 'https://pbs.twimg.com/media/HPX5HUOaUAEVsQ-?format=jpg&name=small',
     alt: 'Kei request from Hutienxi by anaqin5',
     title: 'Kei request from Hutienxi',
@@ -90,7 +98,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 12,
+    id: 13,
     src: 'https://pbs.twimg.com/media/HPDQiw1aMAECko6?format=jpg&name=small',
     alt: '私の光 ver. 2026 by anaqin5',
     title: '私の光 ver. 2026',
@@ -98,7 +106,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 13,
+    id: 14,
     src: 'https://pbs.twimg.com/media/HOzxAD-bgAA38oN?format=jpg&name=small',
     alt: 'untitled by anaqin5',
     title: 'untitled',
@@ -106,7 +114,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 14,
+    id: 15,
     src: 'https://pbs.twimg.com/media/HOJ8Oe3b0AAikT9?format=jpg&name=small',
     alt: 'OC: Lucia by anaqin5',
     title: 'OC: Lucia',
@@ -114,7 +122,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 15,
+    id: 16,
     src: 'https://pbs.twimg.com/media/HN199xLasAA4lO-?format=jpg&name=small',
     alt: 'Kanoki by anaqin5',
     title: 'Kanoki',
@@ -122,7 +130,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 16,
+    id: 17,
     src: 'https://pbs.twimg.com/media/HN1ccaYaAAAZewg?format=jpg&name=small',
     alt: 'Linnea and Lumi by anaqin5',
     title: 'Linnea and Lumi',
@@ -130,7 +138,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 17,
+    id: 18,
     src: 'https://pbs.twimg.com/media/HNg0F10aUAA3VEa?format=jpg&name=4096x4096',
     alt: 'OC Character Sheet: Lucia by anaqin5',
     title: 'OC Character Sheet: Lucia',
@@ -138,7 +146,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 18,
+    id: 19,
     src: 'https://pbs.twimg.com/media/HM-A0meaIAIWoxh?format=jpg&name=small',
     alt: 'Sozoro Ame Kano by anaqin5',
     title: 'Sozoro Ame Kano',
@@ -146,7 +154,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 19,
+    id: 20,
     src: 'https://pbs.twimg.com/media/HMD7Y2CWcAAG48-?format=jpg&name=small',
     alt: 'untitled by anaqin5',
     title: 'untitled',
@@ -154,7 +162,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 20,
+    id: 21,
     src: 'https://pbs.twimg.com/media/HJlaP8MasAAA_2P?format=jpg&name=small',
     alt: 'Thank You, Kano by anaqin5',
     title: 'Thank You, Kano',
@@ -162,7 +170,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 21,
+    id: 22,
     src: 'https://pbs.twimg.com/media/HFCtVnebcAAAW7_?format=jpg&name=small',
     alt: 'Spring Kaella by anaqin5',
     title: 'Spring Kaella',
@@ -170,7 +178,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 22,
+    id: 23,
     src: 'https://pbs.twimg.com/media/HEgl_NCb0AAn_FR?format=jpg&name=small',
     alt: 'Kaella Umise Design by anaqin5',
     title: 'Kaella Umise Design',
@@ -178,7 +186,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 23,
+    id: 24,
     src: 'https://pbs.twimg.com/media/HC3o7nCa4AAhBXn?format=jpg&name=small',
     alt: 'ぬ。 by anaqin5',
     title: 'ぬ。',
@@ -186,7 +194,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 24,
+    id: 25,
     src: 'https://pbs.twimg.com/media/HCTDW0LbEAQ9q5a?format=jpg&name=small',
     alt: 'Miku March 2026 by anaqin5',
     title: 'Miku March 2026',
@@ -194,7 +202,7 @@ export const works = [
     year: '2026',
   },
   {
-    id: 25,
+    id: 26,
     src: 'https://pbs.twimg.com/media/G83LR7TaUAAe4oT?format=jpg&name=large',
     alt: 'Kano Birthday 2025 by anaqin5',
     title: 'Kano Birthday 2025',
@@ -202,7 +210,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 26,
+    id: 27,
     src: 'https://pbs.twimg.com/media/G68bqnGbkAMnr2d?format=jpg&name=large',
     alt: '🦌🍓♥️ by anaqin5',
     title: '🦌🍓♥️',
@@ -210,7 +218,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 27,
+    id: 28,
     src: 'https://pbs.twimg.com/media/G4lcaOUaIAA7HWG?format=jpg&name=4096x4096',
     alt: 'HELLO MY TREAT - MKLNtic by anaqin5',
     title: 'HELLO MY TREAT - MKLNtic',
@@ -218,7 +226,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 28,
+    id: 29,
     src: 'https://pbs.twimg.com/media/G04gf4oa0AEJUYi?format=jpg&name=4096x4096',
     alt: 'Cloud Kano by anaqin5',
     title: 'Cloud Kano',
@@ -226,7 +234,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 29,
+    id: 30,
     src: 'https://pbs.twimg.com/media/Gzx9XEnWUAA30ag?format=jpg&name=4096x4096',
     alt: 'Mahoro Kano by anaqin5',
     title: 'Mahoro Kano',
@@ -234,7 +242,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 30,
+    id: 31,
     src: 'https://pbs.twimg.com/media/GtBCvVDb0AAMPmR?format=jpg&name=4096x4096',
     alt: 'Ichigo Ichie Celebration by anaqin5',
     title: 'Ichigo Ichie Celebration',
@@ -242,7 +250,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 31,
+    id: 32,
     src: 'https://pbs.twimg.com/media/GssBanobMAAi0WS?format=jpg&name=medium',
     alt: 'Fuyu Kano by anaqin5',
     title: 'Fuyu Kano',
@@ -250,7 +258,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 32,
+    id: 33,
     src: 'https://pbs.twimg.com/media/Gqh2LJRbcAEqgbo?format=jpg&name=4096x4096',
     alt: 'Mahoro Gaming by anaqin5',
     title: 'Mahoro Gaming',
@@ -258,7 +266,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 33,
+    id: 34,
     src: 'https://pbs.twimg.com/media/GlM3KRgaIAAhUeb?format=jpg&name=4096x4096',
     alt: 'Yuanfen 5th Anniversary by anaqin5',
     title: 'Yuanfen 5th Anniversary',
@@ -266,7 +274,7 @@ export const works = [
     year: '2025',
   },
   {
-    id: 34,
+    id: 35,
     src: 'https://pbs.twimg.com/media/GdkTsumXwAAdWIQ?format=jpg&name=4096x4096',
     alt: 'Monhun Mahoro Kano by anaqin5',
     title: 'Monhun Mahoro Kano',
@@ -274,7 +282,7 @@ export const works = [
     year: '2024',
   },
   {
-    id: 35,
+    id: 36,
     src: 'https://pbs.twimg.com/media/Gc0z8KEbgAAtsj6?format=jpg&name=4096x4096',
     alt: 'Yuanfen Redraw 2024 by anaqin5',
     title: 'Yuanfen Redraw 2024',
@@ -282,7 +290,7 @@ export const works = [
     year: '2024',
   },
   {
-    id: 36,
+    id: 37,
     src: 'https://pbs.twimg.com/media/GYCrLuTb0AE25Jr?format=jpg&name=large',
     alt: 'Feeling Spiffy by anaqin5',
     title: 'Feeling Spiffy',
@@ -290,7 +298,7 @@ export const works = [
     year: '2024',
   },
   {
-    id: 37,
+    id: 38,
     src: 'https://pbs.twimg.com/media/GUULVVBa8AMx98a?format=jpg&name=4096x4096',
     alt: '私の光 ver 2024 by anaqin5',
     title: '私の光 ver 2024',
