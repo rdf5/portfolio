@@ -6,8 +6,18 @@ const RADIUS_MIN = 320
 const RADIUS_MAX = 560
 const DRAG_THRESHOLD = 60
 
-function getRadius() {
-  const fromViewport = window.innerHeight * 0.5
+const MOBILE_QUERY = '(max-width: 820px)'
+
+function isMobile() {
+  return typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches
+}
+
+function getRadius(stageH = 0, viewportH = 0) {
+  if (isMobile()) {
+    const fromViewport = viewportH > 0 ? viewportH * 0.22 : window.innerHeight * 0.22
+    return Math.min(240, Math.max(120, fromViewport))
+  }
+  const fromViewport = viewportH > 0 ? viewportH * 0.5 : window.innerHeight * 0.5
   return Math.min(RADIUS_MAX, Math.max(RADIUS_MIN, fromViewport))
 }
 
@@ -22,12 +32,10 @@ function slideTransform(offset, dragOffset, radius) {
 }
 
 function getMaxSide(stageW, stageH, viewportH) {
-  const mobile = window.matchMedia('(max-width: 820px)').matches
-  const wFrac = mobile ? 0.84 : 0.76
-  const hFrac = mobile ? 0.86 : 0.86
-  const cap = mobile ? 560 : 760
-  const vhCap = mobile ? 0.55 : 0.66
-  return Math.min(stageW * wFrac, stageH * hFrac, cap, viewportH * vhCap)
+  if (isMobile()) {
+    return Math.min(stageW * 0.92, 560, viewportH * 0.55)
+  }
+  return Math.min(stageW * 0.76, stageH * 0.86, 760, viewportH * 0.66)
 }
 
 function slideSize(ratio, maxSide) {
@@ -54,18 +62,13 @@ export default function ArtworkViewer({ works = [], mode = 'disc', onModeChange 
     [total],
   )
 
-  useEffect(() => {
-    const onResize = () => setRadius(getRadius())
-    window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
-  }, [])
-
   useLayoutEffect(() => {
     const measure = () => {
       const el = stageRef.current
       if (!el) return
       const rect = el.getBoundingClientRect()
       setStageSize({ w: rect.width, h: rect.height })
+      setRadius(getRadius(rect.height, window.innerHeight))
     }
     measure()
     window.addEventListener('resize', measure)
