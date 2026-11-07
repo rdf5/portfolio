@@ -29,7 +29,7 @@ export default function App() {
           @anaqin5
         </a>
         <p className="intro-alias">RDF</p>
-        <p className="tagline">I draw cute anime girls.</p>
+        <p className="tagline">イラストなりたい</p>
         <div className="intro-links">
           <a
             className="intro-link"
